@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1">
+<title>JUPEB Registration Form</title>
+<!-- CSS files -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-theme.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link rel="icon" href="img-logo.png" sizes="16x16 24x24 32x32 48x48 64x64" />
+
+
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+</head>
+<body style="font-family:'Tahoma';font-size:12px">
+<!-- <h1>JUPEB</h1> -->
+<style>
+input[type="checkbox"]{
+margin-bottom:10px;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+</style>
+
+<script>
+function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+	</script>
+
+
+<!-- JS files -->
+<!-- <script src="https://ajax.googleapi.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/npm.js"></script>
+
+<div class="container" style="background:#DDFAFF;border-style:none"><center><img src="img-logo.png"></center>
+<form role="form" action="" method="post" enctype="multipart/form-data">
+<div class="col-md-12" style="margin-top:10px;margin-bottom:10px;background:#F5F5F5;border-bottom:1px solid #cccccc"><center><span style="font-size:20px;">JOINT UNIVERSITIES PRELIMINARY EXAMINATIONS BOARD REGISTRATION FORM 2017/2018</span><br>
+With JUPEB, You Can Gain Admission Into 200 Level Without JAMB Into Almost Southern Nigerian Universities 
+
+</center></div>
+<div class="col-md-12" style="padding:10px;margin-bottom:10px"><center><b><span style="font-size:18px">JUPEB ALEVEL REGISTRATION Reg. No.: BN2417015</span><br/>
+
+Making JUPEB Registration And Admission A Stress-Free One For All Candidates<br><br>
+
+Head Office ADDRESS: JUPEB Alevel Registration; University Road, Tanke Oke-Odo, Ilorin Kwara State<br/>
+
+Your centre name, full and address will be sent to you 48 hours after Your Registration </b><br/>
+
+Call 08180679748, 09050904734. Scan filled Form with bank teller of non-refundable of #15,000 to <a href="mailto:reg@jupeb.com.ng">reg@jupeb.com.ng</a> Payment should be made ONLY through GTBANK on the following account details. <b>Account Name: <em>JUPEB ALEVEL REGISTRATION</em>. Account No: <em>0224463042</em></b><br/>
+
+<br><br> <a href="#" onClick="window.print()" class="btn btn-success btn-lg">
+      <span class="glyphicon glyphicon-print"></span> Print 
+    </a><br/><b>DO FILL ALL THE FIELDS WITH CAPITAL LETTERS</b></center><br><br>
+
+<div class="col-md-3" style="float:right">
+<img id="blah" src="#" width="80px" height="80px" alt=" " /><br/>
+<div class="fileUpload btn btn-success">
+    <span>Select Photo</span>
+    <input type="file" class="upload" name="myfnoni" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" required=""/>
+
+    
+</div>
+
+
+
+</div>
+
+	
+	
+	
+	</div>
+	
+ 
+  
+   
+   <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="firstname">First Name:</label>
+      <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter First Name" required="">
+    </div>
+	</div>
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="middlename">Middle Name:</label>
+      <input type="text" class="form-control" id="mname" name="mname" placeholder="Enter Middle Name" required="">
+    </div>
+	</div>
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="lastname">Last Name:</label>
+      <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Last Name" required="">
+    </div>
+	</div>
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="gender">Gender:</label>
+	  <select name="rgender" class="form-control">
+	  <option value="Female">Female</option>
+	  <option value="Male">Male</option>
+	  </select>
+     
+    </div>
+	</div>
+	
+	
+	
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="email">Email:</label>
+	  <input type="email" class="form-control" id="vemail" name="vemail" placeholder="someone@somewhere.com" required="">
+    </div>
+	</div>
+    
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="dateofbirth">Date of birth:</label>
+	  <input type="date" class="form-control" id="vdob" name="vdob" placeholder="yyyy-mm-dd" maxlength="10" required="">
+    </div>
+	</div>
+	
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="residentialad">Residential Address</label>
+	  <textarea name="residadd" class="form-control" placeholder="Enter Valid Residential Address" required=""></textarea>
+    </div>
+	</div>
+	
+
+	
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="state">State</label>
+	  <input type="text" name="vstate" class="form-control" id="vstate" placeholder="Enter State" required="">
+    </div>
+	</div>
+
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="country">Country</label>
+	  <input type="text" name="vcountry" class="form-control" id="vcountry" placeholder="Enter Country" required="">
+    </div>
+	</div>
+	
+	
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="phoneno">Phone no</label>
+	  <input type="text" name="vphoneno" class="form-control" id="vphoneno" placeholder="080" maxlength="11" required="">
+    </div>
+	</div>
+	
+	
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="phoneno2">Phone no 2</label>
+	  <input type="text" name="vphoneno2" class="form-control" id="vphoneno2" placeholder="080" maxlength="11" required="">
+    </div>
+	</div>
+	
+	
+	<div class="col-md-12" style="background:#F5F5F5;font-size:14pt;padding:10px;border-bottom:1px solid #CCCCCC;margin-bottom:10px"><b>PARENT/GUARDIAN CONTACT DETAILS</b>
+	</div>
+	
+	<div class="col-md-4"> 
+   <div class="form-group">
+      <label for="pgcdFname">Full name</label>
+	  <input type="text" name="pgcdfname" class="form-control" id="pgcdfname" placeholder="Enter Full name" required="">
+    </div>
+	</div>
+	
+	<div class="col-md-4"> 
+   <div class="form-group">
+      <label for="pgcdpno">Phone no</label>
+	  <input type="text" name="pgcdphoneno" class="form-control" id="pgcdphoneno" placeholder="080" maxlength="11" required="">
+    </div>
+	</div>
+	
+	<div class="col-md-4"> 
+   <div class="form-group">
+      <label for="pgcdpno2">Office/Home</label>
+	  <input type="text" name="pgcdphoneno2" class="form-control" id="pgcdphoneno2" placeholder="080" maxlength="11" required="">
+    </div>
+	</div>
+	
+	
+	<div class="col-md-4"> 
+   <div class="form-group">
+      <label for="pgcdradr">Residential Address</label>
+	  <textarea class="form-control" name="pgcdradr" required=""></textarea>
+	  
+    </div>
+	</div>
+	
+	<div class="col-md-12" style="background:#F5F5F5;font-size:14pt;padding:10px;border-bottom:1px solid #CCCCCC;margin-bottom:10px"><b>EDUCATIONAL DETAILS</b>
+	</div>
+	
+	<div class="col-md-9"> 
+   <div class="form-group">
+      <label for="secsname">Secondary School Name</label>
+	  <input type="text" class="form-control" name="ssname" id="ssname" placeholder="Enter Secondary School Name" required="">
+    </div>
+	</div>
+	
+	<div class="col-md-3"> 
+   <div class="form-group">
+      <label for="graduatey">Graduate Year</label>
+	  <input type="text" class="form-control" name="graduateyear" placeholder="Enter Graduate Year" maxlength="4" required="">
+    </div>
+	</div>
+	
+	<div class="col-md-6"> 
+   <div class="form-group">
+      <label for="sectionmj">(WAEC/NECO/NABTEB) MAY/JUN<br>FIRST SITTING</label>
+	
+	
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	 <input type="text" class="form-control" name="subj1" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	 <input type="text" class="form-control" name="grad1" maxlength="2" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj2" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad2" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj3" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad3" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj4" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad4" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj5" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad5" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	
+	
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj6" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad6" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj7" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad7" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj8" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad8" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="subj9" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="grad9" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	
+	
+	 
+	
+	
+	
+	  
+    </div>
+	</div>
+	
+	<div class="col-md-6"> 
+   <div class="form-group">
+      <label for="sectionnd">(WAEC/NECO/NABTEB) NOV/DEC<br>FIRST SITTING</label>
+	  
+	   <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	 <input type="text" class="form-control" name="ndsubj1" placeholder="Enter Subject" maxlength="32" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	 <input type="text" class="form-control" name="ndgrad1" maxlength="2" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj2" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad2" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj3" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad3" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj4" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad4" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj5" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad5" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	
+	
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj6" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad6" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	
+	
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj7" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad7" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj8" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad8" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	 
+	 <!-- Block Subject-->
+	  <div class="col-md-9">
+	  <div class="form-group">
+	  <input type="text" class="form-control" name="ndsubj9" placeholder="Enter Subject" >
+    </div>
+	</div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	  <input type="text" class="form-control" name="ndgrad9" placeholder="Enter Grade" >
+    </div>
+	 </div>
+	 <!-- Block Subject-->
+	 
+	  
+    </div>
+	</div>
+	
+	<div class="col-md-12" style="background:#F5F5F5;font-size:14pt;padding:10px;border-bottom:1px solid #CCCCCC;margin-bottom:10px"><b>Choose Your Preferred JUPEB Study Centre Bellow</b>
+	</div>
+	
+	<div class="col-md-12" style="margin-bottom:10px"><p><b>NOTE:</b> You Can Use Your JUPEB Result/certificate to gain admission into 200 level of all JUPEB affiliated/ partnering universities in Nigeria and abroad irrespective of where You Choose To Attend JUPEB Lectures. All Study Centres Listed Here Follows JUPEB New Syllabus For The 2017/2018 Session. Lectures Commence 2nd Of October All Our Study Centres</p></div>
+	
+	<div class="col-md-4"><label>Tick Your Preferred JUPEB Study Centre</label></div>
+	<div class="col-md-8">
+	<div class="form-group">
+	  <input type="radio" name="centrejupeb" value="Ilorin JUPEB Centre: #240,000;Including accomodation and textbooks"> Ilorin JUPEB Centre: #240,000;Including accomodation and textbooks<br/>
+	  <input type="radio" name="centrejupeb" value=" Abuja JUPEB Centre: #270,000; excluding accommodation">  Abuja JUPEB Centre: #270,000; excluding accommodation<br/>
+	  <input type="radio" name="centrejupeb" value=" Ibadan JUPEB Centre: #240,000; Including Accommodation and Textbooks">  Ibadan JUPEB Centre: #240,000; Including Accommodation and Textbooks<br/>
+	  <input type="radio" name="centrejupeb" value=" Port Harcout JUPEB Centre: #270,000; Including Accommodation and Textbooks">  Port Harcout JUPEB Centre: #270,000; Including Accommodation and Textbooks<br/>
+	  <input type="radio" name="centrejupeb" value=" Lagos JUPEB Centre: 280,000; Including Textbooks, And Accomodation">  Lagos JUPEB Centre: 280,000; Including Textbooks & Accomodation<br/>
+    </div>
+	</div>
+	
+	<div class="col-md-12" style="margin-bottom:10px"><p>Please, Indicate If You Are Interested In The Accommodation Provided By Our JUPEB Study Centres. Choose If You Are Interested In The Accommodation. Just write: <b><em>No, I am not interested</em>, Yes; I am interested</b></p><br>
+	
+	<div class="form-group">
+	<div class="col-md-2" style="margin-bottom:10px">
+	 <select name="accomo" class="form-control">
+	 <option value="NO">NO</option>
+	 <option value="YES">YES</option>
+	 </select>
+	 </div>
+	 
+	<div class="col-md-3">
+	 <textarea class="form-control" name="accominfo"></textarea>
+	 </div>
+    </div>
+	
+	</div>
+	
+	 
+	 <div class="col-md-12" style="margin-bottom:10px"><br><p><b>JUPEB SUBJECTS COMBINATION (English And Mathematics Are Automatically Added)</b></p><br>
+	 
+	  <div class="form-group">
+	  <div class="col-md-4">
+	 <input type="text" class="form-control" name="subcomb1" required=""><br>
+	 <input type="text" class="form-control" name="subcomb2" required=""><br>
+	 <input type="text" class="form-control" name="subcomb3" required=""><br>
+	 </div>
+	 
+	 
+	 
+	 </div>
+	 
+	 </div>
+	 
+	 <div class="col-md-3">
+	 <div class="form-group">
+	 <label>FIRST CHOICE UNIVERSITY</label>
+	 </div>
+	 </div>
+	 
+	  <div class="col-md-4">
+	  <div class="form-group">
+	 <input type="text" class="form-control" name="fchoiceuni" required="">
+	 </div>
+	 </div>
+	
+	 <div class="col-md-12"></div>
+	
+	 <div class="col-md-3">
+	 <div class="form-group">
+	 <label>SECOND CHOICE UNIVERSITY</label>
+	 </div>
+	 </div>
+	 
+	  <div class="col-md-4">
+	  <div class="form-group">
+	 <input type="text" class="form-control" name="schoiceuni" required="">
+	 </div>
+	 </div>
+	
+	
+	 <div class="col-md-12" style="margin-bottom:10px">
+	 <br/>
+	 <p><b>ONLY IF YOU HAVE DEFICIENCY IN YOUR (O'LEVEL) SSSCE RESULT</b></p><p>MATHEMATICS OR/AND ENGLISH ONLY. For other subjects, you have to sit for another SSSCE entirely. Yes, you can use awaiting result for JUPEB Admission.</p><br/>
+	 
+	 
+	  
+	 <div class="col-md-2"></div>
+	 
+	 <div class="col-md-4">
+	 <input type="radio" value="MATHEMATICS" name="defsub"> MATHEMATICS<br/>
+	 <input type="radio" value="ENGLISH" name="defsub"> ENGLISH<br/>
+	 <input type="radio" value="ENGLISH & MATHEMATICS" name="defsub"> BOTH<br/></div>
+	 	 
+	 </div>
+	 
+	 
+	 
+	 <div class="col-md-12" style="margin-bottom:10px">
+	 <div class="form-group">
+	 <div class="col-md-4"><b>WHEN WILL YOU RESUME FOR LECTURES?:</b> YYYY/MM/DD</div>
+	 <div class="col-md-2"><input type="date" class="form-control" name="wwyrfl" placeholder="____-__-__" required=""></div>
+	 <div class="col-md-6"></div>
+	 </div>
+	 <p class="col-md-12" style="margin-top:10px">Official Resumption is on 2/10/2017. Please, note that only grace of 3 weeks are given to registered candidates to resume after official resumption date. After that, admission to the candidate concerned is considered null and void unless on official consideration.</p>
+	 </div>
+	 
+	 
+	  
+	 <div class="col-md-12" style="margin-bottom:10px"><br><p><b>I agree that these information about me are accurate </b></p><br><br><br></div>
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="Parent/Guardian Signature">__________________________</label><br/>
+	  <label for="Parent/Guardian Signature">Parent/Guardian Signature</label>
+    </div>
+	</div>
+	
+	<div class="col-md-4"></div>
+	
+	 <div class="col-md-4"> 
+   <div class="form-group">
+      <label for="Applicant Signature">__________________________</label><br/>
+	  <label for="Applicant Signature">Applicant Signature</label>
+    </div>
+	</div>
+	
+	
+	
+	
+	 <div class="col-md-12"> 
+   <div class="form-group"><br/>
+    <button type="submit" class="btn btn-primary" name="isubmitbtn">Submit</button>
+	</div>
+	</div>
+	
+	
+  
+</div>
+</form>
+
+
+<script>
+function myFunction() {
+    window.print();
+}
+</script>
+<!-- MAP files -->
+
+<script src="css/bootstrap.css.map"></script>
+<script src="css/bootstrap.min.css.map"></script>
+<script src="css/bootstrap-theme.css.map"></script>
+<script src="css/bootstrap-theme.min.css"></script>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1">
+	<title>IUO JUPEB Registration Form</title>
+	<!-- CSS files -->
+	<link href="./JUPEB Registration Form_files/bootstrap.min.css" rel="stylesheet">
+	<link href="./JUPEB Registration Form_files/bootstrap.css" rel="stylesheet">
+	<link href="./JUPEB Registration Form_files/bootstrap-theme.css" rel="stylesheet">
+	<link href="./JUPEB Registration Form_files/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="icon" href="./JUPEB Registration Form_files/IUO_logo.png" sizes="16x16 24x24 32x32 48x48 64x64">
+
+	<link class="jsbin" href="./JUPEB Registration Form_files/jquery-ui.css" rel="stylesheet" type="text/css">
+	<script class="jsbin" src="./JUPEB Registration Form_files/jquery.min.js.download"></script>
+	<script class="jsbin" src="./JUPEB Registration Form_files/jquery-ui.min.js.download"></script>
+
+</head>
+
+<body style="font-family:&#39;Tahoma&#39;font-size:12px">
+	<!-- <h1>JUPEB</h1> -->
+	<style>
+		input[type="checkbox"]{
+margin-bottom:10px;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+</style>
+
+	<script>
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					$('#blah')
+						.attr('src', e.target.result)
+						.width(150)
+						.height(200);
+				};
+
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+	</script>
+
+
+	<!-- JS files -->
+	<!-- <script src="https://ajax.googleapi.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	<script src="./JUPEB Registration Form_files/bootstrap.js.download"></script>
+	<script src="./JUPEB Registration Form_files/bootstrap.min.js.download"></script>
+	<script src="./JUPEB Registration Form_files/npm.js.download"></script>
+
+	<div class="container" style="background:#DDFAFF;border-style:none">
+		<center><img src="IUO_logo.png" width="182" height="175">
+		</center>
+		<form role="form" action="http://www.iuokada.edu.ng/jupeb/home/home/submission-successful" method="post" enctype="multipart/form-data">
+			<div class="col-md-12" style="margin-top:10px;margin-bottom:10px;background:#F5F5F5;border-bottom:1px solid #cccccc">
+				<center>
+					<span style="font-size:20px;">JOINT UNIVERSITIES PRELIMINARY EXAMINATIONS BOARD REGISTRATION FORM 2018/2019</span><br>
+				</center>
+			</div>
+			<div class="col-md-12" style="padding:10px;margin-bottom:10px">
+				<center><b><span style="font-size:18px">JUPEB REGISTRATION Reg. No.: BN2417015</span><br>
+
+						Making JUPEB Registration And Admission A Stress-Free One For All Candidates<br><br>
+
+						Please, upload your O'Level certificate and passport photograph </b><br>
+
+					Contact us via: Mobile: 08034331960, 08053311615; Email: registrar@iuokada.edu.ng, or jupeb@iuokada.edu.ng<br>
+
+					<br><br> <a href="#" onClick="window.print()" class="btn btn-success btn-lg">
+						<span class="glyphicon glyphicon-print"></span> Print
+					</a><br><b>DO FILL ALL THE FIELDS WITH CAPITAL LETTERS</b></center><br><br>
+
+				<div class="col-md-3" style="float:right">
+					<img id="blah" src="./JUPEB Registration Form_files/saved_resource" width="150px" height="150px" alt=" "><br>
+					<div class="fileUpload btn btn-success">
+						<span>Select Photo</span>
+						<input type="file" class="upload" name="passport_upload" accept="image/gif, image/jpeg, image/png" onChange="readURL(this);"
+						 required="">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="firstname">Surname:</label>
+					<input type="text" minlength="3" maxlength="30" class="form-control" id="surname" name="surname" placeholder="Enter Surname"
+					 required="">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="middlename">First Name:</label>
+					<input type="text" minlength="3" maxlength="30" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name"
+					 required="">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="lastname">Other Names:</label>
+					<input type="text" minlength="3" maxlength="50" class="form-control" id="lname" name="lname" placeholder="Enter Other Names"
+					 required="">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="gender">Gender:</label>
+					<select name="rgender" class="form-control">
+						<option value="Female">Female</option>
+						<option value="Male">Male</option>
+					</select>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" minlength="6" maxlength="40" class="form-control" id="vemail" name="vemail" placeholder="someone@somewhere.com"
+					 required="">
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="dateofbirth">Date of birth:</label>
+					<input type="date" class="form-control" id="vdob" name="vdob" placeholder="yyyy-mm-dd" maxlength="10" required="">
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="residentialad">Residential Address</label>
+					<textarea name="residadd" class="form-control" placeholder="Enter Valid Residential Address" required=""></textarea>
+				</div>
+			</div>
+
+
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="state">State</label>
+					<script src="js/lga.js"></script>
+					<select name="state" id="state" class="form-control">
+						<option value="" selected="selected">- Select -</option>
+						<option value='Abia'>Abia</option>
+						<option value='Adamawa'>Adamawa</option>
+						<option value='AkwaIbom'>AkwaIbom</option>
+						<option value='Anambra'>Anambra</option>
+						<option value='Bauchi'>Bauchi</option>
+						<option value='Bayelsa'>Bayelsa</option>
+						<option value='Benue'>Benue</option>
+						<option value='Borno'>Borno</option>
+						<option value='Cross River'>Cross River</option>
+						<option value='Delta'>Delta</option>
+						<option value='Ebonyi'>Ebonyi</option>
+						<option value='Edo'>Edo</option>
+						<option value='Ekiti'>Ekiti</option>
+						<option value='Enugu'>Enugu</option>
+						<option value='FCT'>FCT</option>
+						<option value='Gombe'>Gombe</option>
+						<option value='Imo'>Imo</option>
+						<option value='Jigawa'>Jigawa</option>
+						<option value='Kaduna'>Kaduna</option>
+						<option value='Kano'>Kano</option>
+						<option value='Katsina'>Katsina</option>
+						<option value='Kebbi'>Kebbi</option>
+						<option value='Kogi'>Kogi</option>
+						<option value='Kwara'>Kwara</option>
+						<option value='Lagos'>Lagos</option>
+						<option value='Nasarawa'>Nasarawa</option>
+						<option value='Niger'>Niger</option>
+						<option value='Ogun'>Ogun</option>
+						<option value='Ondo'>Ondo</option>
+						<option value='Osun'>Osun</option>
+						<option value='Oyo'>Oyo</option>
+						<option value='Plateau'>Plateau</option>
+						<option value='Rivers'>Rivers</option>
+						<option value='Sokoto'>Sokoto</option>
+						<option value='Taraba'>Taraba</option>
+						<option value='Yobe'>Yobe</option>
+						<option value='Zamfara'>Zamafara</option>
+					</select>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="lga">Local Government Area</label>
+					<!-- <select name="lga" id="lga" class="form-control" required>
+		</select>
+		-->
+					<input type="text" minlength="3" maxlength="50" name="lga" class="form-control" id="lga" placeholder="Enter Local Government Area"
+					 required="">
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="country">Country</label>
+					<input type="text" name="vcountry" class="form-control" id="vcountry" placeholder="Enter Country" required="">
+				</div>
+			</div>
+
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="phoneno">Phone no</label>
+					<input type="number" minlength="10" maxlength="14" name="vphoneno" class="form-control" id="vphoneno" placeholder="08033333333"
+					 maxlength="11" required="">
+				</div>
+			</div>
+
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="phoneno2">Phone no 2</label>
+					<input type="number" name="vphoneno2" class="form-control" id="vphoneno2" placeholder="08033333333" minlength="10"
+					 maxlength="14">
+				</div>
+			</div>
+
+
+			<div class="col-md-12" style="background:#F5F5F5;font-size:14pt;padding:10px;border-bottom:1px solid #CCCCCC;margin-bottom:10px">
+				<b>PARENT/GUARDIAN
+					CONTACT DETAILS</b>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="pgcdFname">Full name</label>
+					<input type="text" minlength="7" maxlength="50" name="pgcdfname" class="form-control" id="pgcdfname" minlength="2"
+					 maxlength="25" placeholder="Enter Full name" required="">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="pgcdpno">Phone no</label>
+					<input type="number" minlength="10" maxlength="14" name="pgcdphoneno" class="form-control" id="pgcdphoneno"
+					 placeholder="0803333333" required="">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="pgcdpno2">Office/Home Phone no.</label>
+					<input type="number" minlength="5" maxlength="14" name="pgcdphoneno2" class="form-control" id="pgcdphoneno2"
+					 placeholder="" maxlength="11" required="">
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="pgcdradr">Residential Address</label>
+					<textarea class="form-control" name="pgcdradr" required=""></textarea>
+
+				</div>
+			</div>
+
+			<div class="col-md-12" style="background:#F5F5F5;font-size:14pt;padding:10px;border-bottom:1px solid #CCCCCC;margin-bottom:10px"><b>EDUCATIONAL
+					DETAILS</b>
+			</div>
+
+			<div class="col-md-9">
+				<div class="form-group">
+					<label for="secsname">Secondary School Name</label>
+					<input type="text" minlength="5" maxlength="50" class="form-control" name="ssname" id="ssname" placeholder="Enter Secondary School Name"
+					 required="">
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="graduatey">Graduate Year</label>
+					<input type="number" minlength="2" maxlength="4" class="form-control" name="graduateyear" placeholder="Enter Graduate Year"
+					 required="">
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="sectionmj">(WAEC/NECO/NABTEB) MAY/JUN<br>FIRST SITTING</label>
+					<input type="file" class="form-control" name="graduateyear" maxlength="4" required="">
+
+				</div>
+			</div>
+
+			<div class="col-md-12" style="background:#F5F5F5;font-size:14pt;padding:10px;border-bottom:1px solid #CCCCCC;margin-bottom:10px">
+				<p><b>JUPEB Subject Combination</b></p>
+			</div>
+
+			<div class="col-md-9">
+				<div class="form-group">
+					<label for="secsname">Select an Option</label>
+					<select name=”subject_combination” id=” subject_combination”>
+						Education & Arts:
+						<option>Government, Literature in English (EGL) </option>
+						<option>Economics, Government, Mathematics (EGM) </option>
+						<option>Government, Literature in English, Christian Religious Studies (GLR) </option>
+						<option>Chemistry, Mathematics, Physics (CMP) </option>
+						Social Science
+						<option>Economics, Geography OR Government, Mathematics (EGM) </option>
+						<option>Economics, Literature in English, Government (ELG) </option>
+						<option>Biology, Economics, Geography OR Government (BEG) </option>
+						<option>Government, Literature in English, Christian Religious Studies (GLR) </option>
+						Management Science
+						<option>Economics, Government, Mathematics (EGM) </option>
+						<option>Business Studies, Economics, Government (BEG) </option>
+						<option>Accounting, Economics, Geography OR Government (AEG) </option>
+						<option>Accounting, Business Studies, Geography OR Government (ABG) </option>
+						Law
+						<option>Government, Literature in English, Religious Studies (GLR) </option>
+						<option>Economics, Government, Literature in English (EGL) </option>
+						Engineering & Technology
+						<option>Chemistry, Mathematics, Physics (CMP) </option>
+						<option>Biology, Chemistry, Physics (BCP) </option>
+						Medicine & Health Sciences
+						<option>Biology, Chemistry, Physics (BCP) </option>
+						Pharmacy
+						<option>Biology, Chemistry, Physics (BCP) </option>
+						Science
+						<option>Biology, Chemistry, Physics (BCP) </option>
+						<option>Chemistry, Mathematics, Physics (CMP) </option>
+					</select>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="form-group"><br>
+					<button type="submit" class="btn btn-primary" name="isubmitbtn">Submit</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+
+	<script>
+		function myFunction() {
+			window.print();
+		}
+	</script>
+	<!-- MAP files -->
+
+	<script src="./JUPEB Registration Form_files/bootstrap.css.map"></script>
+	<script src="./JUPEB Registration Form_files/bootstrap.min.css.map"></script>
+	<script src="./JUPEB Registration Form_files/bootstrap-theme.css.map"></script>
+	<script src="./JUPEB Registration Form_files/bootstrap-theme.min.css"></script>
+
+</body>
+
+</html>
